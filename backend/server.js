@@ -18,7 +18,7 @@ app.use('/api/users',require('./routes/userRoutes'))
 if(process.env.NODE_ENV==='production'){
     app.use(express.static(path.join(__dirname,'../frontend/buildcc')))
 
-    app.get('*',(req,res)=>res.sendFile(path.resolve(__dirname,'../','frontend','build','cccindex.html')))
+    app.get('*',(req,res)=>res.sendFile(path.resolve(__dirname,'../','frontend','build','cindex.html')))
 }
 else{
     app.get('/' , (req , res)=>{
