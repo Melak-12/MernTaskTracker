@@ -15,6 +15,7 @@ app.use('/api/goals',require('./routes/goRoutes'))
 app.use('/api/users',require('./routes/userRoutes'))
 
 //serve frontend
+/*
 if(process.env.NODE_ENV==='production'){
     app.use(express.static(path.join(__dirname,'../frontend/build')))
 
@@ -27,6 +28,7 @@ else{
     
     })
 }
+*/
 app.use(errorHandler)
 
 app.listen(port,()=>console.log(`server started at port ${port}`.blue))
