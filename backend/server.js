@@ -6,13 +6,13 @@ const connectDB=require('./config/db')
 const port = process.env.PORT || 5000
 const {errorHandler}=require('./middleware/errorMiddleware')
 //insert cores
-const cors=require('cores')
+// const cors=require('cores')
 connectDB();
 const app =express();
 
 app.use(express.json());
 //cores
-app.use(cors())
+// app.use(cors())
 app.use(express.urlencoded({extended:false}));
 
 app.use('/api/goals',require('./routes/goRoutes'))
@@ -35,11 +35,11 @@ else{
 */
 
 //try to accept client
-app.get("/",(req,res)=>{
+/*app.get("/",(req,res)=>{
     res.setHeader("Access-Control-Allow-Credentials","true")
     res.send("API is runing wow..")
 })
-
+*/
 
 
 
