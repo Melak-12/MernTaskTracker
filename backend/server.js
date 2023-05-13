@@ -6,7 +6,7 @@ const connectDB=require('./config/db')
 const port = process.env.PORT || 5000
 const {errorHandler}=require('./middleware/errorMiddleware')
 //insert cores
-// const cors=require('cores')
+const cors=require('cores')
 connectDB();
 const app =express();
 
