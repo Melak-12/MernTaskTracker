@@ -5,10 +5,14 @@ const colors =require('colors')
 const connectDB=require('./config/db')
 const port = process.env.PORT || 5000
 const {errorHandler}=require('./middleware/errorMiddleware')
+//insert cores
+const cors=require('cores')
 connectDB();
 const app =express();
 
 app.use(express.json());
+//cores
+app.use(cors())
 app.use(express.urlencoded({extended:false}));
 
 app.use('/api/goals',require('./routes/goRoutes'))
