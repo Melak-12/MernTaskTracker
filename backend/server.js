@@ -12,7 +12,7 @@ const app =express();
 
 app.use(express.json());
 //cores
-// app.use(cors())
+app.use(cors())
 app.use(express.urlencoded({extended:false}));
 
 app.use('/api/goals',require('./routes/goRoutes'))
@@ -35,11 +35,11 @@ else{
 */
 
 //try to accept client
-/*app.get("/",(req,res)=>{
+app.get("/",(req,res)=>{
     res.setHeader("Access-Control-Allow-Credentials","true")
     res.send("API is runing wow..")
 })
-*/
+
 
 
 
