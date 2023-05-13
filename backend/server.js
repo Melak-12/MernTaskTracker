@@ -29,6 +29,17 @@ else{
     })
 }
 */
+
+//try to accept client
+app.get("/",(req,res)=>{
+    res.setHeader("Access-Control-Allow-Credentials","true")
+    res.send("API is runing wow..")
+})
+
+
+
+
+
 console.log("ready for frontend")
 app.use(errorHandler)
 
