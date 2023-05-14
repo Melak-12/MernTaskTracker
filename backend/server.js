@@ -40,7 +40,7 @@ app.use(cors(
     origin:["http://localhost:3000","https://frontend-qu8k.onrender.com"]
 }*/
 ))
-
+//
 
 
 console.log("ready for frontend")
