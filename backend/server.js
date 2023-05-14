@@ -18,7 +18,7 @@ app.use('/api/goals',require('./routes/goRoutes'))
 app.use('/api/users',require('./routes/userRoutes'))
 
 //serve frontend
-
+/*
 if(process.env.NODE_ENV==='production'){
     app.use(express.static(path.join(__dirname,'./build')))
 
@@ -32,12 +32,14 @@ else{
     })
 }
 
-
+*/
 //try to accept client on
 
-app.use(cors({
+app.use(cors(
+  /*  {
     origin:["http://localhost:3000","https://frontend-qu8k.onrender.com"]
-}))
+}*/
+))
 
 
 
