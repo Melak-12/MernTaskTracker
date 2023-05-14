@@ -33,7 +33,7 @@ else{
 }
 
 */
-//try to accept client on
+//try to accept client on other
 
 app.use(cors(
   /*  {
