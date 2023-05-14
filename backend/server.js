@@ -19,11 +19,11 @@ app.use('/api/goals',require('./routes/goRoutes'))
 app.use('/api/users',require('./routes/userRoutes'))
 
 //serve frontend
-/*
-if(process.env.NODE_ENV==='production'){
-    app.use(express.static(path.join(__dirname,'../frontend/build')))
 
-    app.get('*',(req,res)=>res.sendFile(path.resolve(__dirname,'../','frontend','build','cindex.html')))
+if(process.env.NODE_ENV==='production'){
+    app.use(express.static(path.join(__dirname,'./build')))
+
+    app.get('*',(req,res)=>res.sendFile(path.resolve(__dirname,'./','build','index.html')))
 }
 else{
     app.get('/' , (req , res)=>{
@@ -32,7 +32,7 @@ else{
     
     })
 }
-*/
+
 
 //try to accept client
 /*app.get("/",(req,res)=>{
