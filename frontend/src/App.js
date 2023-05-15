@@ -5,11 +5,13 @@ import Dashboard from './pages/Dashboard';
 import Header from './components/Header'
 ;
 import Register from './pages/Register';
+import Footer from './components/Footer';
 
 function App() {
 
   return (<>
-   
+  
+
     <Router>
     <div className="conatiner">
 
@@ -20,12 +22,13 @@ function App() {
           <Route path='/register' element ={<Register/>}/>
           
        </Routes>
-  
+      <Footer/>
     </div>
 
     </Router>
 
   <ToastContainer/>
+  
   </>
   )}
 
